@@ -2,3 +2,10 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --accent-color: #FF0070;
+  --bg-color: #000028;
+  --text-color: #F1B2CE;
+  --text-size: 18px;
+  --font: 'IBM Plex mono';
+}
