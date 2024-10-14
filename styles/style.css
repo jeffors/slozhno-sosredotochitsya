@@ -2,4 +2,100 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family: var(--font, sans-serif);
+  font-size: var(--text-size, 18px);
+  /* background-color: var(--bg-color, #000028); */
+  color: var(--text-color, #F1B2CE);
+  line-height: var(--line-height, 1.3);
+  background-image: url('/images/cover-image-dark.png');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
+  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+  inset-inline-start: 10px;
+  inset-block-end: 10px;
+  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--accent-color);
+}
+
+.header {
+  position: relative;
+  display: grid;
+  height: 100vb;
+  padding: 10px;
+  justify-items: end;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 55px; 
+}
+
+.header__decorated {
+  position: absolute;
+  color: var(--accent-color);
+  inset-inline-end: 17px;
+  inset-block-start: 10px;
+}
+
+.header__decorated::after {
+  content:'';
+  margin-inline-start: 10px;
+  display: inline-block;
+padding: 6px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2px #FF0070;
+}
+
+.header__theme-menu {
+  align-self: end;
+  padding-block-end: 10px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  color: var(--accent-color);
+  background-color: transparent;
+  border: 1px solid currentColor;
+  text-transform: lowercase;
+  padding: 1.5px 13px;
+}
+
+.header__title {
+  color: #DB00FF;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-weight: bold;
+  line-height: 82.5%;
+  align-self: center;
+}
+
+.header__caption {
+  align-self: baseline;
+  font-weight: bold;
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+  color: var(--bg-color, #000028);
 }
