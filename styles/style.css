@@ -95,6 +95,11 @@ padding: 6px;
   font-weight: bold;
 }
 
+.section__title {
+  color: var(--accent-color);
+  font-size: inherit;
+}
+
 .title-decor {
   background-color: var(--accent-color);
   color: var(--bg-color, #000028);
