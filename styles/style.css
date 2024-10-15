@@ -105,9 +105,24 @@ padding: 6px;
   font-weight: bold;
 }
 
+.section {
+  display: grid;
+  gap: 20px;
+  padding: 30px 0 20px 0;
+}
+
+.section__card {
+  display: grid;
+  gap: 10px;
+}
+
 .section__title {
   color: var(--accent-color);
   font-size: inherit;
+}
+
+.gallery {
+  padding: 30px 0;
 }
 
 .gallery__title {
@@ -123,6 +138,10 @@ padding: 6px;
 
 .gallery__list-image {
   inline-size: 100%;
+}
+
+.card__title {
+  font-size: inherit;
 }
 
 .title-decor {
