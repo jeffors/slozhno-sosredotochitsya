@@ -13,6 +13,10 @@
   background-attachment: fixed;
 }
 
+.main {
+  padding: 10px;
+}
+
 .decorated-zone {
   position: relative;
   height: 100vb;
@@ -104,6 +108,21 @@ padding: 6px;
 .section__title {
   color: var(--accent-color);
   font-size: inherit;
+}
+
+.gallery__title {
+  font-size: inherit;
+  /* mb временный, убрать после вёрстки секций */
+  margin-bottom: 10px;
+}
+
+.gallery__list {
+  display: grid;
+  gap: 10px;
+}
+
+.gallery__list-image {
+  inline-size: 100%;
 }
 
 .title-decor {
