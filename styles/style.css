@@ -13,6 +13,14 @@
   background-attachment: fixed;
 }
 
+.decorated-zone {
+  position: relative;
+  height: 100vb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .decorated-zone::before {
   content: '';
   position: absolute;
@@ -36,9 +44,7 @@
 }
 
 .header {
-  position: relative;
   display: grid;
-  height: 100vb;
   padding: 10px;
   justify-items: end;
   grid-template-rows: 1fr 1fr 1fr;
@@ -103,4 +109,12 @@ padding: 6px;
 .title-decor {
   background-color: var(--accent-color);
   color: var(--bg-color, #000028);
+}
+
+.footer__title {
+  color: #DB00FF;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  text-shadow: 2px 2px 0 var(--accent-color);
+  font-weight: bold;
+  line-height: 82.5%;
 }
