@@ -144,6 +144,17 @@ padding: 6px;
   font-size: inherit;
 }
 
+.link {
+  text-shadow: 2px 2px 0 var(--accent-color);
+  text-decoration: none;
+}
+
+.link:hover {
+  /* text-decoration: underline;
+  text-underline-offset: 4px; */
+  border-block-end: 1px solid white;
+}
+
 .title-decor {
   background-color: var(--accent-color);
   color: var(--bg-color, #000028);
