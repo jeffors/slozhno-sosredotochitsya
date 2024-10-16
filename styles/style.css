@@ -194,3 +194,37 @@ padding: 6px;
   font-weight: bold;
   line-height: 82.5%;
 }
+
+@media (768px <= width < 1024px) {
+  .header {
+    padding: 0 20px;
+  }
+
+  .header__title {
+    margin-inline-start: -20px;
+    justify-self: start;
+  }
+
+  .header__caption {
+    inline-size: 50%;
+  }
+
+  .decorated-zone::before {
+    inset-inline-end: 20px;
+    inset-block-start: 20px;
+  }
+
+  .decorated-zone::after {
+    inset-inline-start: 20px;
+    inset-block-end: 20px;
+  }
+
+  .header__decorated { 
+    inset-inline-end: 27px;
+    inset-block-start: 20px;
+  }
+}
+
+@media (width >= 1024px) {
+  
+}
