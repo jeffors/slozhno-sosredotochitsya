@@ -97,6 +97,14 @@ padding: 6px;
   border: 1px solid rgba(255, 0, 111, 0.4);
 }
 
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end: 1px solid var(--accent-color);
+}
+
 .header__theme-menu-button_active {
   border: 1px solid currentColor;
   pointer-events: none;
@@ -158,6 +166,14 @@ padding: 6px;
 .link {
   text-shadow: 2px 2px 0 var(--accent-color);
   text-decoration: none;
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  outline: 1px solid var(--text-color);
 }
 
 .link:hover {
