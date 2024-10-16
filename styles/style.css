@@ -84,11 +84,22 @@ padding: 6px;
 }
 
 .header__theme-menu-button {
+  border: 1px solid transparent;
   color: var(--accent-color);
   background-color: transparent;
-  border: 1px solid currentColor;
   text-transform: lowercase;
-  padding: 1.5px 13px;
+  padding: 4px 13px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid rgba(255, 0, 111, 0.4);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid currentColor;
+  pointer-events: none;
 }
 
 .header__title {
