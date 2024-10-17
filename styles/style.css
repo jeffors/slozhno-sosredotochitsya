@@ -236,6 +236,14 @@ padding: 6px;
   .main {
     padding: 30px 20px;
   }
+
+  .section-question .section__title {
+    inline-size: 25%;
+  }
+
+  .section {
+    padding: 30px 0 50px 0;
+  }
 }
 
 @media (width >= 1024px) {
