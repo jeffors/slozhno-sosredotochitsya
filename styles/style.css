@@ -162,6 +162,9 @@ padding: 6px;
 
 .gallery__list-image {
   inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .card__title {
@@ -243,6 +246,42 @@ padding: 6px;
 
   .section {
     padding: 30px 0 50px 0;
+  }
+
+  .gallery__title {
+    /* mb временный, убрать после вёрстки секций */
+    margin-bottom: 20px;
+  }
+
+  .gallery__list {
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; */
+    gap: 20px;
+    grid-template-areas:
+   "sunset sunset icecream"
+    "tape books icecream"
+    "tape street street"
+} 
+  
+
+  .sunset {
+    grid-area: sunset;
+  }
+
+  .ice-cream {
+    grid-area: icecream;
+  }
+
+  .tape {
+    grid-area: tape;
+  }
+
+  .books {
+    grid-area: books;
+  }
+
+  .street {
+    grid-area: street;
   }
 }
 
