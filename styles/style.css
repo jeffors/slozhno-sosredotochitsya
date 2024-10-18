@@ -20,9 +20,6 @@
 .decorated-zone {
   position: relative;
   height: 100vb;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .decorated-zone::before {
@@ -195,6 +192,12 @@ padding: 6px;
   color: var(--bg-color, #000028);
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer__title {
   color: #DB00FF;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -287,5 +290,20 @@ padding: 6px;
 }
 
 @media (width >= 1024px) {
+  .header {
+    padding: 20px;
+    gap: 85px; 
+  }
+
+  .header__theme-menu {
+    align-self: start;
+    justify-self: center;
+    padding-block-end: 10px;
+  }
   
+  .header__theme-menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
 }
