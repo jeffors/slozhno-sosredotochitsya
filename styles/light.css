@@ -9,4 +9,13 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --accent-color: #FF8DCB;
+  --bg-color: #FFC2E6;
+  --text-color: #353430;
+  --text-color-accent: var(--text-color);
+  background-image: url('/images/cover-image-light.png');
+}
+
+.page.theme_light .header__decorated {
+  display: none;
 }

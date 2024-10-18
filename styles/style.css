@@ -189,7 +189,7 @@ padding: 6px;
 
 .title-decor {
   background-color: var(--accent-color);
-  color: var(--bg-color, #000028);
+  color: var(--text-color-accent, #000028);
 }
 
 .footer {
