@@ -265,9 +265,8 @@ padding: 6px;
    "sunset sunset icecream"
     "tape books icecream"
     "tape street street"
-} 
+  } 
   
-
   .sunset {
     grid-area: sunset;
   }
@@ -286,6 +285,10 @@ padding: 6px;
 
   .street {
     grid-area: street;
+  }
+
+  .footer__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
