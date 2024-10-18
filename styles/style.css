@@ -245,7 +245,7 @@ padding: 6px;
   }
 
   .section-question .section__title {
-    inline-size: 25%;
+    inline-size: 33%;
   }
 
   .section {
@@ -308,5 +308,18 @@ padding: 6px;
     display: flex;
     flex-direction: row;
     gap: 10px;
+  }
+
+  .section-question .section__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .section-question .section__card {
+    align-items: start;
+    height: min-content;
+  }
+
+  .section {
+    /* gap: 10px; */
   }
 }
