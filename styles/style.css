@@ -246,7 +246,7 @@
   }
 
   .section-question .section__title {
-    inline-size: 33%;
+    inline-size: 25%;
   }
 
   .section {
@@ -318,6 +318,10 @@
   .section-question .section__card {
     align-items: start;
     height: min-content;
+  }
+
+  .section-question .section__title {
+    inline-size: 33%;
   }
 
   .section {
