@@ -9,11 +9,11 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --accent-color: #FF8DCB;
-  --bg-color: #FFC2E6;
+  --accent-color: #ff8dcb;
+  --bg-color: #ffc2e6;
   --text-color: #353430;
   --text-color-accent: var(--text-color);
-  background-image: url('/images/cover-image-light.png');
+  background-image: url("/images/cover-image-light.png");
 }
 
 .page.theme_light .header__decorated {
@@ -26,9 +26,9 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --accent-color: #FF8DCB;
-    --bg-color: #FFC2E6;
+    --accent-color: #ff8dcb;
+    --bg-color: #ffc2e6;
     --text-color: #353430;
-    --text-color-accent: var(--text-color); 
-    }
+    --text-color-accent: var(--text-color);
+  }
 }
