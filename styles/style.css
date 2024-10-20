@@ -62,8 +62,10 @@
 .header__decorated::after {
   content: "";
   margin-inline-start: 10px;
+  margin-block-end: 2px;
   display: inline-block;
-  padding: 6px;
+  block-size: 9px;
+  inline-size: 9px;
   background-color: var(--accent-color);
   border-radius: 50%;
   box-shadow: 0px 0px 4px 2px #ff0070;
@@ -232,7 +234,7 @@
   }
 
   .header__decorated {
-    inset-inline-end: 27px;
+    inset-inline-end: 29px;
     inset-block-start: 20px;
   }
 
