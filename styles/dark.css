@@ -16,9 +16,12 @@
   background-image: url("/images/cover-image-dark.png");
 }
 
-.page.page.theme_dark .header__decorated {
+.page.theme_dark .header__decorated {
   display: block;
 }
 
+.header__theme-menu-button {
+  color: var(--accent-color);
+}
 
 /* Остальные стили */
