@@ -13,7 +13,7 @@
   --bg-color: #000028;
   --text-color-accent: var(--bg-color);
   --text-color: #f1b2ce;
-  background-image: url("./images/cover-image-dark.png");
+  background-image: url("../images/cover-image-dark.png");
 }
 
 .page.theme_dark .header__decorated {
