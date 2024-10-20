@@ -311,6 +311,14 @@
     gap: 10px;
   }
 
+  .section {
+    gap: 10px; 
+  }
+
+  .section-question {
+    gap: 20px;
+  }
+
   .section-question .section__list {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -324,7 +332,4 @@
     inline-size: 33%;
   }
 
-  .section {
-    /* gap: 10px; */
-  }
-}
+}  
