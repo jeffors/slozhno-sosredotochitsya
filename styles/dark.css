@@ -13,4 +13,12 @@
   --bg-color: #000028;
   --text-color-accent: var(--bg-color);
   --text-color: #F1B2CE;
+  background-image: url("/images/cover-image-dark.png");
 }
+
+.page.page.theme_dark .header__decorated {
+  display: block;
+}
+
+
+/* Остальные стили */

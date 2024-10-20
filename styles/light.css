@@ -31,4 +31,16 @@
     --text-color: #353430;
     --text-color-accent: var(--text-color);
   }
+
+  .page {
+    background-image: url("/images/cover-image-light.png");
+  }
+
+  .page .header__decorated {
+    display: none;
+  }
+  
+  .header__theme-menu-button {
+    color: var(--text-color);
+  }
 }
