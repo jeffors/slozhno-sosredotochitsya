@@ -20,7 +20,7 @@
   display: block;
 }
 
-.header__theme-menu-button {
+.page.theme_dark .header__theme-menu-button {
   color: var(--accent-color);
 }
 
