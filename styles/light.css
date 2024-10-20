@@ -10,7 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --accent-color: #ff8dcb;
-  --bg-color: #ffc2e6;
+  --bg-color: #FFF1F7;
   --text-color: #353430;
   --text-color-accent: var(--text-color);
   background-image: url("../images/cover-image-light.png");
@@ -27,7 +27,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --accent-color: #ff8dcb;
-    --bg-color: #ffc2e6;
+    --bg-color: #FFF1F7;
     --text-color: #353430;
     --text-color-accent: var(--text-color);
   }
