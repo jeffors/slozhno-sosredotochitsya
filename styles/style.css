@@ -140,6 +140,14 @@
   font-size: inherit;
 }
 
+.section__caption {
+  font-weight: bold;
+}
+
+.section-concetration .card__title {
+  font-weight: normal;
+}
+
 .section__list {
   display: grid;
   gap: 20px;
