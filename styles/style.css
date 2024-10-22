@@ -52,7 +52,7 @@
   padding: 10px;
 }
 
-.header__decorated {
+.header__rec {
   position: absolute;
   display: var(--rec-display);
   color: var(--accent-color);
@@ -60,7 +60,7 @@
   inset-block-start: 10px;
 }
 
-.header__decorated::after {
+.header__rec::after {
   content: "";
   display: inline-block;
   margin-inline-start: 10px;
@@ -240,7 +240,7 @@
     inset-block-end: 20px;
   }
 
-  .header__decorated {
+  .header__rec {
     inset-inline-end: 29px;
     inset-block-start: 20px;
   }
