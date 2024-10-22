@@ -117,6 +117,7 @@
   font-weight: bold;
   line-height: 82.5%;
   align-self: center;
+  justify-self: start;
 }
 
 .header__caption {
@@ -159,7 +160,6 @@
 
 .gallery__title {
   font-size: inherit;
-  /* mb временный, убрать после вёрстки секций */
   margin-block-end: 10px;
 }
 
@@ -223,7 +223,6 @@
 
   .header__title {
     margin-inline-start: -20px;
-    justify-self: start;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
