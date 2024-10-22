@@ -21,7 +21,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  .page {
     --accent-color: #ff8dcb;
     --bg-color: #fff1f7;
     --text-color: #353430;
