@@ -11,11 +11,12 @@
   */
   --accent-color: #ff0070;
   --bg-color: #000028;
-  --text-color-accent: var(--bg-color);
+  --heading-color: var(--bg-color);
   --text-color: #f1b2ce;
   --bg-image: url("../images/cover-image-dark.png");
   --rec-display: block;
   --menu-color: var(--accent-color);
+  --title-color: #db00ff;
 }
 
 /* Остальные стили */

@@ -29,8 +29,8 @@
   block-size: 25px;
   inset-inline-end: 10px;
   inset-block-start: 10px;
-  border-block-start: 1px solid var(--accent-color);
-  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--menu-color);
+  border-inline-end: 1px solid var(--menu-color);
 }
 
 .decorated-zone::after {
@@ -40,8 +40,8 @@
   block-size: 25px;
   inset-inline-start: 10px;
   inset-block-end: 10px;
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--menu-color);
+  border-block-end: 1px solid var(--menu-color);
 }
 
 .header {
@@ -88,9 +88,9 @@
   color: var(--menu-color);
   background-color: transparent;
   text-transform: lowercase;
-  padding: 4px 13px;
+  padding: 0 13px 4px;
   cursor: pointer;
-  line-height: 1;
+  line-height: 1.16;
 }
 
 .header__theme-menu-button:hover {
@@ -111,9 +111,9 @@
 }
 
 .header__title {
-  color: #db00ff;
+  color: var(--title-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 #ff0070;
   font-weight: bold;
   line-height: 82.5%;
   align-self: center;
@@ -136,7 +136,7 @@
 }
 
 .section__title {
-  color: var(--accent-color);
+  color: var(--menu-color);
   font-size: inherit;
 }
 
@@ -200,7 +200,7 @@
 
 .title-decor {
   background-color: var(--accent-color);
-  color: var(--text-color-accent, #000028);
+  color: var(--heading-color, #000028);
 }
 
 .footer {
@@ -210,9 +210,9 @@
 }
 
 .footer__title {
-  color: #db00ff;
+  color: var(--title-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 #ff0070;
   font-weight: bold;
   line-height: 82.5%;
 }
