@@ -48,7 +48,7 @@
   display: grid;
   padding: 10px;
   justify-items: end;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
   gap: 55px;
 }
 
@@ -130,7 +130,7 @@
   padding: 30px 0 20px 0;
 }
 
-.section__card {
+.card {
   display: grid;
   gap: 10px;
 }
@@ -160,15 +160,15 @@
 .gallery__title {
   font-size: inherit;
   /* mb временный, убрать после вёрстки секций */
-  margin-bottom: 10px;
+  margin-block-end: 10px;
 }
 
-.gallery__list {
+.gallery__images {
   display: grid;
   gap: 10px;
 }
 
-.gallery__list-image {
+.gallery__images-picture {
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
@@ -193,8 +193,6 @@
 }
 
 .link:hover {
-  /* text-decoration: underline;
-  text-underline-offset: 4px; */
   border-block-end: 1px solid white;
 }
 
@@ -220,6 +218,7 @@
 @media (width >= 768px) {
   .header {
     padding: 0 20px;
+    gap: 60px;
   }
 
   .header__title {
@@ -265,13 +264,10 @@
   }
 
   .gallery__title {
-    /* mb временный, убрать после вёрстки секций */
-    margin-bottom: 20px;
+    margin-block-end: 20px;
   }
 
-  .gallery__list {
-    /* grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr; */
+  .gallery__images {
     gap: 20px;
     grid-template-areas:
       "sunset sunset icecream"
@@ -331,10 +327,10 @@
   }
 
   .section-question .section__list {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .section-question .section__card {
+  .section-question .card {
     align-items: start;
     height: min-content;
   }
