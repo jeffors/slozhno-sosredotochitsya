@@ -1,8 +1,8 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  color: var(--text-color, #f1b2ce);
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  color: var(--text-color, #f1b2ce);
   font-family: var(--font, sans-serif);
   font-size: var(--text-size, 18px);
   line-height: var(--line-height, 1.3);
@@ -11,10 +11,6 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-}
-
-.main {
-  padding: 10px;
 }
 
 .decorated-zone {
@@ -126,21 +122,19 @@
   font-weight: bold;
 }
 
+.title-decor {
+  color: var(--heading-color, #000028);
+  background-color: var(--accent-color);
+}
+
+.main {
+  padding: 10px;
+}
+
 .section {
   display: grid;
   gap: 20px;
   padding: 30px 0 20px 0;
-}
-
-.card {
-  display: grid;
-  gap: 10px;
-}
-
-.card__description {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 
 .section__title {
@@ -153,13 +147,48 @@
   font-weight: bold;
 }
 
-.section-concetration .card__title {
-  font-weight: normal;
-}
-
 .section__list {
   display: grid;
   gap: 20px;
+}
+
+.card {
+  display: grid;
+  gap: 10px;
+}
+
+.card__title {
+  font-size: inherit;
+}
+
+
+.card__description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
+  border-block-end: 1px solid transparent;
+  transition: border-block-end 0.5s ease-out;
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  outline: 1px solid var(--text-color);
+}
+
+.link:hover {
+  border-block-end: 1px solid var(--text-color);
+}
+
+.section-concetration .card__title {
+  font-weight: normal;
 }
 
 .concetration {
@@ -189,34 +218,6 @@
   block-size: 100%;
 }
 
-.card__title {
-  font-size: inherit;
-}
-
-.link {
-  text-decoration: none;
-  text-shadow: 2px 2px 0 var(--accent-color);
-  border-block-end: 1px solid transparent;
-  transition: border-block-end 0.5s ease-out;
-}
-
-.link:focus {
-  outline: none;
-}
-
-.link:focus-visible {
-  outline: 1px solid var(--text-color);
-}
-
-.link:hover {
-  border-block-end: 1px solid var(--text-color);
-}
-
-.title-decor {
-  color: var(--heading-color, #000028);
-  background-color: var(--accent-color);
-}
-
 .footer {
   display: flex;
   justify-content: center;
@@ -232,9 +233,24 @@
 }
 
 @media (width >= 768px) {
+  .decorated-zone::before {
+    inset-inline-end: 20px;
+    inset-block-start: 20px;
+  }
+
+  .decorated-zone::after {
+    inset-inline-start: 20px;
+    inset-block-end: 20px;
+  }
+
   .header {
     gap: 60px;
     padding: 0 20px;
+  }
+
+  .header__rec {
+    inset-inline-end: 29px;
+    inset-block-start: 20px;
   }
 
   .header__title {
@@ -246,21 +262,6 @@
     inline-size: 50%;
   }
 
-  .decorated-zone::before {
-    inset-inline-end: 20px;
-    inset-block-start: 20px;
-  }
-
-  .decorated-zone::after {
-    inset-inline-start: 20px;
-    inset-block-end: 20px;
-  }
-
-  .header__rec {
-    inset-inline-end: 29px;
-    inset-block-start: 20px;
-  }
-
   .section-hard,
   .section-concetration {
     grid-template-columns: 1fr 2fr;
@@ -270,12 +271,12 @@
     padding: 30px 20px;
   }
 
-  .section-question .section__title {
-    inline-size: 25%;
-  }
-
   .section {
     padding: 30px 0 50px 0;
+  }
+
+  .section-question .section__title {
+    inline-size: 25%;
   }
 
   .gallery__title {
