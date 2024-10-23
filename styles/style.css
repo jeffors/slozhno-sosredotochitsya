@@ -137,6 +137,12 @@
   gap: 10px;
 }
 
+.card__description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .section__title {
   color: var(--menu-color);
   font-size: inherit;
@@ -153,6 +159,12 @@
 
 .section__list {
   display: grid;
+  gap: 20px;
+}
+
+.concetration {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
