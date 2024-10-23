@@ -184,6 +184,8 @@
 .link {
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
+  border-block-end: 1px solid transparent;
+  transition: border-block-end 0.5s ease-out;
 }
 
 .link:focus {
