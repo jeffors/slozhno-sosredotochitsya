@@ -193,7 +193,7 @@
 }
 
 .link:hover {
-  border-block-end: 1px solid white;
+  border-block-end: 1px solid var(--text-color);
 }
 
 .title-decor {
