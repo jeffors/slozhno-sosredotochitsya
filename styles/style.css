@@ -53,7 +53,7 @@
   position: absolute;
   display: var(--rec-display);
   color: var(--accent-color);
-  inset-inline-end: 17px;
+  inset-inline-end: 19px;
   inset-block-start: 10px;
 }
 
